@@ -40,55 +40,7 @@
     <div class="content">
       <div style="margin-top:35px; margin-bottom:60px;" class="content-padded">
      <br>
-     
-	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
-				<h1><a href="https://learncodeweb.com/phonegap/how-to-use-instascan-an-html5-qr-scanner/">How to use Instascan an HTML5 QR scanner</a></h1>
-				<div class="col-sm-12">
-					<video id="preview" class="p-1 border" style="width:100%;"></video>
-				</div>
-				<script type="text/javascript">
-					var scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5, mirror: false });
-					scanner.addListener('scan',function(content){
-						alert(content);
-						//window.location.href=content;
-					});
-					Instascan.Camera.getCameras().then(function (cameras){
-						if(cameras.length>0){
-							scanner.start(cameras[0]);
-							$('[name="options"]').on('change',function(){
-								if($(this).val()==1){
-									if(cameras[0]!=""){
-										scanner.start(cameras[0]);
-									}else{
-										alert('No Front camera found!');
-									}
-								}else if($(this).val()==2){
-									if(cameras[1]!=""){
-										scanner.start(cameras[1]);
-									}else{
-										alert('No Back camera found!');
-									}
-								}
-							});
-						}else{
-							console.error('No cameras found.');
-							alert('No cameras found.');
-						}
-					}).catch(function(e){
-						console.error(e);
-						alert(e);
-					});
-				</script>
-				<div class="btn-group btn-group-toggle mb-5" data-toggle="buttons">
-				  <label class="btn btn-primary active">
-					<input type="radio" name="options" value="1" autocomplete="off" checked> Front Camera
-				  </label>
-				  <label class="btn btn-secondary">
-					<input type="radio" name="options" value="2" autocomplete="off"> Back Camera
-				  </label>
-				</div>
-     
-     
+  
       <p >Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:
 https://icon-library.net//images/scan-qr-code-icon/scan-qr-code-icon-21.jpg
       <br>
@@ -128,7 +80,7 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
   <a style="color: grey;" class="tab-item active" href="#">
     <span class="icon fas fa-qrcode"></span>
   </a>
-  <a class="tab-item" href="#myModalexample">
+  <a class="tab-item" href="https://play.google.com/store/apps/details?id=me.scan.android.client&launch=true">
     <img class="icon" src="qr-code-scan.png"/>
   </a>
   <a style="color: grey;"   class="tab-item" href="#">
