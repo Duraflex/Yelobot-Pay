@@ -66,6 +66,311 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
         </ul>
       </div>
       
+ul class="table-view">
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+</ul>
+Table view with media (icons)
+Ratchicons can also used instead of images.
+
+Item 1
+Item 2
+Item 3
+<ul class="table-view">
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <span class="media-object pull-left icon icon-trash"></span>
+      <div class="media-body">
+        Item 1
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <span class="media-object pull-left icon icon-gear"></span>
+      <div class="media-body">
+        Item 2
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <span class="media-object pull-left icon icon-pages"></span>
+      <div class="media-body">
+        Item 3
+      </div>
+    </a>
+  </li>
+</ul>
+Table view with buttons
+Item 1Button
+Item 2Button
+Item 3Button
+Item 4Button
+<ul class="table-view">
+  <li class="table-view-cell">Item 1 <button class="btn">Button</button></li>
+  <li class="table-view-cell">Item 2 <button class="btn btn-primary">Button</button></li>
+  <li class="table-view-cell">Item 3 <button class="btn btn-positive">Button</button></li>
+  <li class="table-view-cell">Item 4 <button class="btn btn-negative">Button</button></li>
+</ul>
+Table view with toggles
+Item 1
+Item 2
+Item 3
+<ul class="table-view">
+  <li class="table-view-cell">
+    Item 1
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li class="table-view-cell">
+    Item 2
+    <div class="toggle active">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li class="table-view-cell">
+    Item 3
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+</ul>
+Carded table views
+Use .card to wrap any content in a padded element.
+
+Item 1
+Item 2
+Divider
+Item 3
+Item 4
+<div class="card">
+  <ul class="table-view">
+    <li class="table-view-cell">Item 1</li>
+    <li class="table-view-cell">Item 2</li>
+    <li class="table-view-cell table-view-divider">Divider</li>
+    <li class="table-view-cell">Item 3</li>
+    <li class="table-view-cell">Item 4</li>
+  </ul>
+</div>
+Buttons
+Buttons come in many flavors and should be used for user actions.
+
+Button Button Button Button Button Button Button Button Button
+<button class="btn">Button</button>
+<button class="btn btn-primary">Button</button>
+<button class="btn btn-positive">Button</button>
+<button class="btn btn-negative">Button</button>
+<button class="btn btn-link">Button</button>
+
+<button class="btn btn-outlined">Button</button>
+<button class="btn btn-primary btn-outlined">Button</button>
+<button class="btn btn-positive btn-outlined">Button</button>
+<button class="btn btn-negative btn-outlined">Button</button>
+Buttons with icons
+Ratchicons work inside buttons too.
+
+ Button  Button  Button  Button  Button
+<button class="btn">
+  <span class="icon icon-search"></span>
+  Button
+</button>
+<button class="btn btn-primary">
+  <span class="icon icon-search"></span>
+  Button
+</button>
+<button class="btn btn-positive">
+  <span class="icon icon-search"></span>
+  Button
+</button>
+<button class="btn btn-negative">
+  <span class="icon icon-search"></span>
+  Button
+</button>
+<button class="btn btn-link">
+  <span class="icon icon-left"></span>
+  Button
+</button>
+Buttons with badges
+Badge button 1 Badge button 1 Badge button 1 Badge button 1
+<button class="btn">Badge button <span class="badge">1</span></button>
+<button class="btn btn-primary">Badge button <span class="badge badge-primary">1</span></button>
+<button class="btn btn-positive">Badge button <span class="badge badge-positive">1</span></button>
+<button class="btn btn-negative">Badge button <span class="badge badge-negative">1</span></button>
+
+<button class="btn btn-outlined">Badge button <span class="badge badge-inverted">1</span></button>
+<button class="btn btn-outlined btn-primary">Badge button <span class="badge badge-primary badge-inverted">1</span></button>
+<button class="btn btn-outlined btn-positive">Badge button <span class="badge badge-positive badge-inverted">1</span></button>
+<button class="btn btn-outlined btn-negative">Badge button <span class="badge badge-negative badge-inverted">1</span></button>
+Block buttons
+Block button
+Block button
+Block button
+Block button
+Block button
+Block button
+Block button
+Block button
+<button class="btn btn-block">Block button</button>
+<button class="btn btn-primary btn-block">Block button</button>
+<button class="btn btn-positive btn-block">Block button</button>
+<button class="btn btn-negative btn-block">Block button</button>
+
+<button class="btn btn-block btn-outlined">Block button</button>
+<button class="btn btn-primary btn-block btn-outlined">Block button</button>
+<button class="btn btn-positive btn-block btn-outlined">Block button</button>
+<button class="btn btn-negative btn-block btn-outlined">Block button</button>
+Segmented control
+Content sections that are to be swapped in and out by the controller should all be siblings and have the class .control-content. Then, just give each content section an id and point the link in the segmented control to that id.
+
+Thing one	Thing two	Thing three
+Item 1
+<div class="segmented-control">
+  <a class="control-item active" href="#item1mobile">
+    Thing one
+  </a>
+  <a class="control-item" href="#item2mobile">
+    Thing two
+  </a>
+  <a class="control-item" href="#item3mobile">
+    Thing three
+  </a>
+</div>
+<div class="card">
+  <span id="item1mobile" class="control-content active">Item 1</span>
+  <span id="item2mobile" class="control-content">Item 2</span>
+  <span id="item3mobile" class="control-content">Item 3</span>
+</div>
+Badges
+Badges come in four flavors and should be used to indicate "how many" of something there are. Adding the a class of .badge-inverted will remove the badges background color.
+
+1 2 3 4 1 2 3 4
+<span class="badge">1</span>
+<span class="badge badge-primary">2</span>
+<span class="badge badge-positive">3</span>
+<span class="badge badge-negative">4</span>
+
+<span class="badge badge-inverted">1</span>
+<span class="badge badge-primary badge-inverted">2</span>
+<span class="badge badge-positive badge-inverted">3</span>
+<span class="badge badge-negative badge-inverted">4</span>
+Forms
+Full name
+ 
+Search
+ 
+Choose existing
+<form>
+  <input type="text" placeholder="Full name">
+  <input type="search" placeholder="Search">
+  <textarea rows="5"></textarea>
+  <button class="btn btn-positive btn-block">Choose existing</button>
+</form>
+Form with input group
+Full name
+ 
+Email
+ 
+Username
+<form class="input-group">
+  <input type="text" placeholder="Full name">
+  <input type="email" placeholder="Email">
+  <input type="text" placeholder="Username">
+</form>
+Form with input group and labels
+Full name
+Mister Ratchet
+Email
+ratchetframework@gmail.com
+Username
+goRatchet
+<form class="input-group">
+  <div class="input-row">
+    <label>Full name</label>
+    <input type="text" placeholder="Mister Ratchet">
+  </div>
+  <div class="input-row">
+    <label>Email</label>
+    <input type="email" placeholder="ratchetframework@gmail.com">
+  </div>
+  <div class="input-row">
+    <label>Username</label>
+    <input type="text" placeholder="goRatchet">
+  </div>
+</form>
+Toggles
+Toggles can be used by sliding or tapping the control.
+
+<div class="toggle active">
+  <div class="toggle-handle"></div>
+</div>
+<div class="toggle">
+  <div class="toggle-handle"></div>
+</div>
+Toggles.js binds an event to the document that returns a detail object and can be used to fire a callback.
+
+// Only needed if you want to fire a callback
+document
+.querySelector('#myToggle')
+.addEventListener('toggle', myFunction)
+Popovers
+<div id="popover" class="popover">
+  <header class="bar bar-nav">
+    <h1 class="title">Popover title</h1>
+  </header>
+  <ul class="table-view">
+    <li class="table-view-cell">Item1</li>
+    <li class="table-view-cell">Item2</li>
+    <li class="table-view-cell">Item3</li>
+    <li class="table-view-cell">Item4</li>
+    <li class="table-view-cell">Item5</li>
+    <li class="table-view-cell">Item6</li>
+    <li class="table-view-cell">Item7</li>
+    <li class="table-view-cell">Item8</li>
+  </ul>
+</div>
+Popovers are designed to only fire from title bars. Set the value of the title href to the id of a popover, like so:
+
+<header class="bar bar-nav">
+  <a href="#myPopover">
+    <h1 class="title">
+      Tap title
+      <span class="icon icon-caret"></span>
+    </h1>
+  </a>
+</header>
+Modals
+Open modal
+Modal mobile
+The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
+      
+      
 <nav class="bar bar-tab">
   <a class="tab-item active" href="#">
     <span class="icon icon-home"></span>
