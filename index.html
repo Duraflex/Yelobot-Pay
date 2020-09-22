@@ -14,6 +14,9 @@
     <!-- Include the compiled Ratchet CSS -->
     <link href="ratchet.min.css" rel="stylesheet">
     
+<link href="webshare.css" rel="stylesheet">
+    
+    
     <link href="ratcheticon.svg" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -21,6 +24,7 @@
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.min.js"></script>
 
+ <script src="webShare.js"></script>
     
   </head>
   <body>
@@ -83,7 +87,7 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
   <a class="tab-item" href="#myModalexample">
     <img class="icon" src="qr-code-scan.png"/>
   </a>
-  <a style="color: grey;"   class="tab-item" href="#">
+  <a style="color: grey;"   class="tab-item" href="https://caniuse.com/#feat=web-share" target="_blank" rel="noreferrer noopener">
     <span class="icon fas fa-share-alt"></span>
   </a>
 </nav>
@@ -111,7 +115,18 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
   <span id="item2mobile" class="control-content"><img src="Screenshot.png" width="100%" />
   </span>
 </div>
-  
+
+
+
+<div class="share">
+  <div id="share-btn" class="share-btn web-share">Share</div>
+  <div id="share-fallback" class="share-buttons">
+    <a class="share-btn fb" href="https://facebook.com/sharer/sharer.php?u=https://pakin.me/blog/create-share-button-with-web-share-api/" target="_blank">Share</a>
+    <a class="share-btn tw" href="https://twitter.com/intent/tweet/?text=Web+Share+API+with+fallback&url=https://pakin.me/blog/create-share-button-with-web-share-api/&via=pknme" target="_blank">Tweet</a>
+    <a class="share-btn pk" href="https://getpocket.com/edit?url=https://pakin.me/blog/share-button-with-web-share-api/" target="_blank">Save</a>
+  </div>
+</div>
+
 
 
 <div style="margin-top:57%;">
@@ -128,4 +143,31 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
 </div>
 
   </body>
+  <script>
+const shareButton = document.querySelector('.share-button');
+const shareDialog = document.querySelector('.share-dialog');
+const closeButton = document.querySelector('.close-button');
+
+shareButton.addEventListener('click', event => {
+  if (navigator.share) { 
+   navigator.share({
+      title: 'WebShare API Demo',
+      url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+    } else {
+        shareDialog.classList.add('is-open');
+    }
+});
+
+closeButton.addEventListener('click', event => {
+  shareDialog.classList.remove('is-open');
+});
+
+
+Resources
+    
+  </script>
 </html>
