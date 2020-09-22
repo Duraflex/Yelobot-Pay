@@ -95,15 +95,29 @@ This is an example HTML page that's linked up to compiled Ratchet CSS and JS, ha
     <h1 class="title">Scan to Pay</h1>
   </header>
   <div class="content">
-    <p class="content-padded">
+    <div class="content-padded">
       
-<img src="qrscananimation.gif" width="100%" />
-      
-<div class="icon alert-secondary" role="alert">
-  A simple secondary alert—check it out!
+<div class="segmented-control">
+  <a class="control-item active" href="#item1mobile">
+    Thing one
+  </a>
+  <a class="control-item" href="#item2mobile">
+    Thing two
+  </a>
+
+</div>
+<div class="card">
+  <span id="item1mobile" class="control-content active"><img src="qrscananimation.gif" width="100%" /></span>
+  <span id="item2mobile" class="control-content"><img src="Screenshot_20200922-002039~2.png" width="100%" /></span>
 </div>
       
-      The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+
+
+
+      
+      The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+      
+      </div>
 
     
   </div>
