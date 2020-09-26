@@ -41,6 +41,7 @@
     <div class="content">
       <div style="margin-top:35px; margin-bottom:60px;" class="content-padded">
      <br>
+  <span id="item3mobile" class="control-content active">
      <h2 style="text-align: center;">Generate a QR Code Payment Service!</h2>
     
 <div class="card">
@@ -101,7 +102,10 @@
 </ul>
 </div>
 </div>
+</span>
       
+      
+  <span id="item4mobile" class="control-content">
       <div class="card">
         <ul class="table-view">
           <li class="table-view-cell">
@@ -126,20 +130,20 @@
           </li>
         </ul>
       </div>
-      
+      </span>
       
 <a href="#myModalexample" class="btn">Open modal</a>
     </div>
 </div>
       
-<nav class="bar bar-tab" style="background-color: #eddf2f;">
-  <a style="color: grey;" class="tab-item active" href="#">
+<nav class="bar bar-tab segmented-control" style="background-color: #eddf2f;">
+  <a style="color: grey;" class="tab-item control-item active" href="#item3mobile">
     <span class="icon fas fa-qrcode"></span>
   </a>
   <a class="tab-item" href="#myModalexample">
     <img class="icon" src="qr-code-scan.png"/>
   </a>
-  <a style="color: grey;"   class="tab-item" href="https://caniuse.com/#feat=web-share" target="_blank" rel="noreferrer noopener">
+  <a style="color: grey;"   class="tab-item control-item" href="#item4mobile">
     <span class="icon fas fa-share-alt"></span>
   </a>
 </nav>
@@ -183,31 +187,4 @@
 </div>
 
   </body>
-  <script>
-const shareButton = document.querySelector('.share-button');
-const shareDialog = document.querySelector('.share-dialog');
-const closeButton = document.querySelector('.close-button');
-
-shareButton.addEventListener('click', event => {
-  if (navigator.share) { 
-   navigator.share({
-      title: 'WebShare API Demo',
-      url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch(console.error);
-    } else {
-        shareDialog.classList.add('is-open');
-    }
-});
-
-closeButton.addEventListener('click', event => {
-  shareDialog.classList.remove('is-open');
-});
-
-
-Resources
-    
-  </script>
 </html>
