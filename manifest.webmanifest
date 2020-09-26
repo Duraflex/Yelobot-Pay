@@ -1,15 +1,15 @@
 {
   "short_name": "Yelobot Pay",
-  "name": "Weather: Do I need an umbrella?",
-  "description": "Weather forecast information",
+  "name": "Yelobot Pay: Use your smartphone to make a payment.",
+  "description": "Contactless payment with QR technology.",
   "icons": [
     {
-      "src": "/images/icons-192.png",
+      "src": "YeloBot Logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "YeloBot Logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -25,14 +25,14 @@
       "short_name": "Today",
       "description": "View weather information for today",
       "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      "icons": [{ "src": "YeloBot Logo.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
+      "name": "How's weather Contactless Payments",
+      "short_name": "Yelobot Pay",
+      "description": Process payment instantly in your local currency",
       "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+      "icons": [{ "src": "YeloBot Logo.png", "sizes": "192x192" }]
     }
   ]
 }
