@@ -1,1 +1,113 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>YeloBot Pay</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="shortcut icon" href="YeloBot Logo.png" type="image/x-icon">
+  <meta name="description" content="Accept digital QR Payments from our Yelobot Pay plans.">
+  
+   <!-- Favicons -->
+<link rel="apple-touch-icon" href="YeloBot Logo.png" sizes="180x180">
+<link rel="icon" href="YeloBot Logo.png" sizes="32x32" type="image/png">
+<link rel="icon" href="YeloBot Logo.png" sizes="16x16" type="image/png">
+
+
+<link rel="mask-icon" href="YeloBot Logo.png" color="#f0f000">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#eddf2f">
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet.min.css" rel="stylesheet">
+   
+   <link href="ratcheticon.svg" rel="stylesheet">
+
+<link rel="manifest" href="/manifest.webmanifest">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+   
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.min.js"></script>
+    
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header style="background-color:#212121;" class="bar bar-nav">
+  <a class="icon pull-left">
+    <!--Left icon button-->
+  </a>
+  <a  href="" class="icon pull-right">
+     <!--Right icon button-->
+  </a>
+<h1 class="title"><img src="YeloBot Logo.png" style="width:22%; filter: drop-shadow(1px 1px 6px black); margin-top:6px;" /></h1>
+</header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div style="margin-top:35px; margin-bottom:60px;" class="content-padded">
+     <br>
+  
+     <h3 style="text-align: center;">Generate a <br>Yelobot-Pay Plan!</h3><br>
+     
+     
+      
+  
+    </div>
+</div>
+      
+<nav class="bar bar-tab" style="background-color: #eddf2f;">
+  <a style="color: grey;" class="tab-item" href="#">
+    <span class="icon fas fa-qrcode"></span>
+  </a>
+  <a class="tab-item" href="#myModalexample">
+    <img class="icon" src="qr-code-scan.png"/>
+  </a>
+</nav>
+
+    
+<div id="myModalexample" class="modal">
+  <header class="bar bar-nav">
+    <a style="color: black;" class="icon far fa-window-close pull-right" href="#myModalexample"></a>
+    <h1 class="title">SCAN PAY CODE</h1>
+  </header>
+  <div class="content">
+    <div class="content-padded">
+      
+<div class="segmented-control">
+  <a class="control-item active" href="#item1mobile">
+    Get Ready to Scan
+  </a>
+  <a class="control-item" href="#item2mobile">
+    Allow Automatic Opening
+  </a>
+
+</div>
+<div class="card">
+  <span id="item1mobile" class="control-content active"><img src="qrscananimation.gif" width="100%" /></span>
+  <span id="item2mobile" class="control-content"><img src="Screenshot.png" width="100%" />
+  </span>
+</div>
+
+
+<div style="margin-top:57%;">
+  
+<button class="btn btn-block" style="background-color: #eddf2f;"> <a class="tab-item" href="https://rb.gy/2iokiv">
+    <img class="icon" width="15%" src="qr-code-scan.png"/></a></button>
+
+</div>
+      
+      </div>
+
+    
+  </div>
+</div>
+
+  </body>
+</html>
